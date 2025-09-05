@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinicas Moviles</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/chat-bot.css">
+    <link rel="stylesheet" href="/css/clinicas-moviles.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="datos-medicos.html">Datos Médicos</a></li>
+            <li><a href="calendario.html">Calendario</a></li>
+            <li><a href="clinicas-moviles.html">Clínicas Móviles</a></li>
+            <li><a href="unidad-cercana.html">Unidad Cercana</a></li>
+            <li><a href="index.html" id="logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botón flotante del chat con imagen -->
+    <div class="chat-float" id="chatToggle">
+        <img src="/images/MedicalBot.png" alt="Asistente IA">
+    </div>
+
+    <!-- Ventana del chat -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <span>MedicalBot</span>
+            <button id="closeChat">✖</button>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="chatText" placeholder="Escribe un mensaje...">
+            <button id="sendChat">➤</button>
+        </div>
+    </div>
+
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/chat-bot.js"></script>
+    <script src="/javascript/clinicas-moviles.js"></script>
+</body>
+
+</html>
