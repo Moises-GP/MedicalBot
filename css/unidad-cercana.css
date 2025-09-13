@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    background: #1976d2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+#controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    z-index: 2;
+}
+
+#map {
+    position: absolute;
+    top: calc(60px + 60px);
+    /* altura aproximada de header + controls */
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 120px);
+    /* ajusta según el alto de header+controls */
+    min-height: 300px;
+    z-index: 1;
+}
+
+#legend {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    z-index: 3;
+}
+
+#legend p {
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
+
+#legend span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+select,
+button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+button {
+    background: #1976d2;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+/* sólo estilos mínimos necesarios para el autocompletado visual de sugerencias */
+#sugerencias {
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1001;
+    width: 320px;
+}
+
+.sugerencia-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.sugerencia-item:hover {
+    background: #f0f0f0;
+}
+
+/* ubicación posicional mínima para el contenedor de controles si tu CSS no la cubre */
+#controls {
+    position: absolute;
+    top: 72px;
+    left: 12px;
+    z-index: 1000;
+}
+
+#busquedaNombre {
+    width: 320px;
+    box-sizing: border-box;
+}
+
+/* sólo estilos mínimos necesarios para el autocompletado visual de sugerencias */
+#sugerencias {
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 1001;
+    width: 320px;
+}
+
+.sugerencia-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.sugerencia-item:hover {
+    background: #f0f0f0;
+}
+
+/* ubicación posicional mínima para el contenedor de controles si tu CSS no la cubre */
+#controls {
+    position: absolute;
+    top: 72px;
+    left: 12px;
+    z-index: 1000;
+}
+
+#busquedaNombre {
+    width: 320px;
+    box-sizing: border-box;
+}
