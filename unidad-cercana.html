@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad Cercana</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/chat-bot.css">
-    <link rel="stylesheet" href="css/unidad-cercana.css">
+    <title>Lobby</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/chat-bot.css">
+    <link rel="stylesheet" href="/css/unidad-cercana.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7dwOpNy5RJ7__i0FmqOltHs5vZXT_w3Q&libraries=places,geometry&callback=initMap" async defer></script>
 </head>
 
 <body>
@@ -17,24 +19,49 @@
             <li><a href="datos-medicos.html">Datos Médicos</a></li>
             <li><a href="calendario.html">Calendario</a></li>
             <li><a href="clinicas-moviles.html">Clínicas Móviles</a></li>
-            <li><a href="unidad-cercana.html">Unidad Cercana</a></li>
+            <li><a href="unidad-cercana{
+                
+            }.html">Unidad Cercana</a></li>
             <li><a href="index.html" id="logout">Cerrar Sesión</a></li>
         </ul>
     </nav>
 
-    <!-- Controles del mapa -->
     <div id="controls">
-        <input type="text" id="start" placeholder="Punto de inicio">
-        <input type="text" id="end" placeholder="Destino">
-        <button id="getRoute">Mostrar ruta</button>
-        <button id="findHospitals">Buscar hospitales cercanos</button>
+        <select id="tipoLugar" onchange="filtrarTipo()">
+            <option value="">Todos los tipos</option>
+            <option value="hospital">🏥 Hospitales</option>
+            <option value="clinica">🩺 Clínicas</option>
+            <option value="farmacia">💊 Farmacias</option>
+            <option value="centro de salud">🏥 Centros de Salud</option>
+        </select>
+
+        <div style="position:relative; margin-top:8px;">
+            <input id="busquedaNombre" type="text" placeholder="Buscar por nombre (ej. 'Salud Integral')"
+                autocomplete="off" />
+            <div id="sugerencias" style="display:none"></div>
+        </div>
+
+        <div style="margin-top:8px;">
+            <button onclick="cargarTodosLosLugares()">📌 Ver Todos</button>
+            <button onclick="buscarMasCercano()">📍 Más Cercano</button>
+            <button onclick="centrarUbicacion()">📍 Mi Ubicación</button>
+            <button onclick="limpiarRuta()">❌ Limpiar Ruta</button>
+        </div>
+
+        <select id="resultadosDropdown" onchange="seleccionarResultado()" style="margin-top:8px;">
+            <option value="">Resultados de búsqueda</option>
+        </select>
     </div>
 
-    <!-- Contenedor del mapa -->
     <div id="map"></div>
 
-    <!-- Panel de direcciones -->
-    <div id="directionsPanel"></div>
+    <div id="legend">
+        <h4>Leyenda</h4>
+        <p><span style="background:red;"></span> Hospitales</p>
+        <p><span style="background:green;"></span> Clínicas</p>
+        <p><span style="background:orange;"></span> Farmacias</p>
+        <p><span style="background:blue;"></span> Centros de Salud</p>
+    </div>
 
     <!-- Botón flotante del chat con imagen -->
     <div class="chat-float" id="chatToggle">
@@ -54,16 +81,9 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="javascript/script.js"></script>
-    <script src="javascript/chat-bot.js"></script>
-    <script src="javascript/unidad-cercana.js"></script>
-
-    <!-- Script de Google Maps con tu API Key -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd_45Rs2_aSpeGgMAjYup5_Lzo0Xz9_wU&libraries=places&callback=initMap">
-    </script>
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/chat-bot.js"></script>
+    <script src="/javascript/unidad-cercana.js"></script>
 </body>
-
 
 </html>
