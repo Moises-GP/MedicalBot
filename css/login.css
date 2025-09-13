@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/images/Salud.png") no-repeat center center/cover;
+    background: url("images/Salud.png") no-repeat center center/cover;
 }
 
 /* Contenedor del login */
@@ -72,6 +72,7 @@ body {
     background: #ddd;
 
 }
+
 
 
 
