@@ -4,30 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <title>SaludIA - Tu Asistente Virtual para la Salud</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <label for="username">Username</label>
-            <input type="email" id="username" placeholder="Nombre de Usuario o Correo Electronico" required>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="logo">
+            <img src="/images/MedicalBots.png" alt="Logo MedicalBots" class="logo-img"
+                style="height:50px;width:50px;vertical-align:middle;">
+            <span>MedicalBots</span>
+        </div>
+        <nav class="menu">
+            <a href="login.html">Iniciar Sesión</a>
+            <a href="login.html" class="btn-registrar">Registrarse</a>
+        </nav>
+    </header>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Contraseña" required>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Reemplazo emoji por imagen -->
+        <div class="icono" style="background:none;padding:0;">
+            <img src="/images/MedicalBots.png" alt="Icono Asistente" style="height:150px;width:150px;display:block;margin:0 auto;">
+        </div>
+        <h1>Tu Asistente Virtual para la Salud</h1>
+        <p>
+            Obtén información personalizada sobre cuidado de la salud, hábitos de alimentación,
+            rutinas de ejercicio y encuentra centros de salud cercanos con inteligencia artificial.
+        </p>
+    </main>
 
-            <button type="submit">Login</button>
-        </form>
-    </div>
-    <script src="javascript/login.js"></script>
+    <!-- Sección de funcionalidades -->
+    <section class="funcionalidades">
+        <h2>Funcionalidades Principales</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🛡️</div>
+                <h3>Preclasificación de Enfermedades</h3>
+                <p>Identifica posibles condiciones de salud basadas en síntomas con IA avanzada.</p>
+            </div>
+            <div class="card">
+                <div class="icon">💬</div>
+                <h3>Chatbot Inteligente</h3>
+                <p>Conversa con nuestro asistente IA para obtener consejos de salud personalizados.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📅</div>
+                <h3>Calendario de Salud</h3>
+                <p>Mantente al día con jornadas de salud, ferias médicas y clínicas móviles.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📍</div>
+                <h3>Centros de Salud Cercanos</h3>
+                <p>Encuentra hospitales, clínicas y centros de salud más cercanos a tu ubicación.</p>
+            </div>
+            <div class="card">
+                <div class="icon">💚</div>
+                <h3>Promoción de Salud</h3>
+                <p>Recibe información actualizada sobre hábitos saludables y prevención.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🩺</div>
+                <h3>Consultas de Atención</h3>
+                <p>Programa y gestiona tus citas médicas de manera eficiente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo"><span>MedicalBots</span></div>
+        <p>© 2025 MedicalBots. Cuidando tu salud con inteligencia artificial.</p>
+    </footer>
 </body>
-
-
-</html>
-
-
-
-
-
+</html
