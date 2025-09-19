@@ -1,0 +1,73 @@
+/* Contenedor general */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+/* Estilo del formulario */
+.form-datos {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.form-datos label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Inputs y selects */
+.form-datos input,
+.form-datos select,
+.form-datos textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efecto focus */
+.form-datos input:focus,
+.form-datos select:focus,
+.form-datos textarea:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.4);
+}
+
+/* Textareas */
+.form-datos textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Botón */
+.form-datos .btn {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-datos .btn:hover {
+    background-color: #1f6391;
+}

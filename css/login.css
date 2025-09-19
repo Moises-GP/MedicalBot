@@ -1,0 +1,182 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2fcf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #064e3b;
+}
+
+/* Contenedor principal */
+.login-container {
+    max-width: 420px;
+    text-align: center;
+}
+
+.icono-principal {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #4b5563;
+    margin-bottom: 25px;
+}
+
+/* Caja del login */
+.login-box {
+    background: #ecfdf5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: left;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #6b7280;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.2s ease;
+}
+
+.tab.active {
+    color: #064e3b;
+    border: 2px solid #064e3b;
+    border-bottom: none;
+    background-color: white;
+}
+
+/* Formularios */
+.formulario {
+    display: none;
+}
+
+.formulario.active {
+    display: block;
+}
+
+.formulario h2 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.formulario p {
+    margin-bottom: 15px;
+    color: #4b5563;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.btn-login {
+    width: 100%;
+    background-color: #064e3b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    background-color: #065f46;
+}
+
+.olvide {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #064e3b;
+    text-decoration: none;
+}
+
+.olvide:hover {
+    text-decoration: underline;
+}
+
+/* Features debajo */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.features div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features span {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Contenedor de la contraseña */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+    /* espacio para el icono */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
