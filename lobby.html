@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby - Asistente Virtual de Salud</title>
+    <link rel="stylesheet" href="/css/lobby.css">
+</head>
+
+<body>
+    <!-- Topbar -->
+    <header class="topbar">
+        <button id="toggle-btn" class="toggle-btn">☰</button>
+        <div class="topbar-text">
+            <span class="title">Asistente de Salud MedicalBots</span>
+        </div>
+        <div class="user-info">
+            <span>🔔 3</span>
+            <span>Usuario</span>
+            <span>theninjagp@gmail.com</span>
+        </div>
+    </header>
+
+    <!-- Sidebar (oculto por defecto) -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Chatbot</a>
+            <a href="#">Preclasificación</a>
+            <a href="#">Centros de Salud</a>
+            <a href="#">Eventos</a>
+            <a href="#">Información</a>
+            <a href="#">Mi Actividad</a>
+        </nav>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main">
+        <section class="dashboard">
+            <h2>Bienvenido, theninjagp@gmail.com</h2>
+            <p>Aquí tienes un resumen de tu actividad de salud</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Consultas Realizadas</h3>
+                    <p>12</p>
+                    <small>Este mes</small>
+                </div>
+                <div class="card">
+                    <h3>Evaluaciones</h3>
+                    <p>3</p>
+                    <small>Preclasificaciones</small>
+                </div>
+                <div class="card">
+                    <h3>Eventos Próximos</h3>
+                    <p>2</p>
+                    <small>En tu área</small>
+                </div>
+                <div class="card">
+                    <h3>Centros Cercanos</h3>
+                    <p>8</p>
+                    <small>Disponibles</small>
+                </div>
+            </div>
+
+            <div class="card card-acciones">
+                <h3 style="display:flex;align-items:center;font-size:1.1rem;margin-bottom:18px;"><span style="font-size:22px;margin-right:8px;">➕</span> Acciones Rápidas</h3>
+                <div class="quick-actions">
+                    <button class="blue">Nueva Consulta<br><span style="font-size:0.95em;font-weight:normal;">Habla con nuestro asistente</span></button>
+                    <button class="green">Evaluar Síntomas<br><span style="font-size:0.95em;font-weight:normal;">Preclasificación rápida</span></button>
+                    <button class="purple">Buscar Centros<br><span style="font-size:0.95em;font-weight:normal;">Encuentra ayuda cerca</span></button>
+                    <button class="orange">Ver Eventos<br><span style="font-size:0.95em;font-weight:normal;">Jornadas y ferias</span></button>
+                </div>
+            </div>
+
+            <div class="card card-actividad">
+                <h3 style="display:flex;align-items:center;font-size:1.1rem;margin-bottom:18px;"><span style="font-size:22px;margin-right:8px;">⏰</span> Actividad Reciente</h3>
+                <div class="actividad-lista">
+                    <div class="actividad-tarjeta">
+                        <div class="actividad-izq">
+                            <div class="actividad-icono"><span style="font-size:22px;color:#bfc8d7;">💬</span></div>
+                        </div>
+                        <div class="actividad-centro">
+                            <div class="actividad-titulo">Consulta sobre dolor de cabeza</div>
+                            <div class="actividad-desc">Evaluación de síntomas completada</div>
+                            <div class="actividad-fecha">Hace 2 horas</div>
+                        </div>
+                        <div class="actividad-der">
+                            <span class="actividad-estado baja">Baja</span>
+                        </div>
+                    </div>
+                    <div class="actividad-tarjeta">
+                        <div class="actividad-izq">
+                            <div class="actividad-icono"><span style="font-size:22px;color:#bfc8d7;">🩺</span></div>
+                        </div>
+                        <div class="actividad-centro">
+                            <div class="actividad-titulo">Preclasificación realizada</div>
+                            <div class="actividad-desc">Síntomas de gripe común identificados</div>
+                            <div class="actividad-fecha">Hace 1 día</div>
+                        </div>
+                        <div class="actividad-der">
+                            <span class="actividad-estado media">Media</span>
+                        </div>
+                    </div>
+                    <div class="actividad-tarjeta">
+                        <div class="actividad-izq">
+                            <div class="actividad-icono"><span style="font-size:22px;color:#bfc8d7;">📅</span></div>
+                        </div>
+                        <div class="actividad-centro">
+                            <div class="actividad-titulo">Evento guardado</div>
+                            <div class="actividad-desc">Jornada de vacunación COVID-19</div>
+                            <div class="actividad-fecha">Hace 2 días</div>
+                        </div>
+                        <div class="actividad-der">
+                            <span class="actividad-estado info">Info</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/js/lobby.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Médicos</title>
+    <link rel="stylesheet" href="css/datos-personales.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Datos Personales</h1>
+        <form action="#" method="post" class="form-datos">
+            
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="0" required>
+
+            <label for="sexo">Sexo</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Seleccione...</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+
+            <label for="sangre">Tipo de sangre</label>
+            <select id="sangre" name="sangre" required>
+                <option value="">Seleccione...</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="altura">Altura (cm)</label>
+            <input type="number" id="altura" name="altura" min="0">
+
+            <label for="peso">Peso (kg)</label>
+            <input type="number" id="peso" name="peso" min="0">
+
+            <label for="alergias">Alergias</label>
+            <textarea id="alergias" name="alergias" placeholder="Describa sus alergias"></textarea>
+
+            <label for="cronicas">Enfermedades crónicas</label>
+            <textarea id="cronicas" name="cronicas" placeholder="Ej: diabetes, hipertensión"></textarea>
+
+            <label for="medicamentos">Medicamentos actuales</label>
+            <textarea id="medicamentos" name="medicamentos" placeholder="Liste los medicamentos que usa"></textarea>
+
+            <label for="emergencia">Contacto de emergencia</label>
+            <input type="text" id="emergencia" name="emergencia" placeholder="Nombre y teléfono">
+
+            <button type="submit" class="btn">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>

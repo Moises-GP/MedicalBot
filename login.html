@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaludIA - Iniciar Sesión</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <main class="login-container">
+        <div class="icono-principal">
+            <img src="images/MedicalBots.png" alt="Logo SaludIA" style="width: 150px; height: 150px; object-fit: contain; border-radius: 0; background: none;">
+        </div>
+        <h1>Asistente Virtual de Salud</h1>
+        <p class="subtitulo">Tu compañero inteligente para el cuidado de la salud</p>
+
+        <div class="login-box">
+            <div class="tabs">
+                <button class="tab active" data-tab="login">Iniciar Sesión</button>
+                <button class="tab" data-tab="register">Registrarse</button>
+            </div>
+
+            <!-- Formulario de Login -->
+            <div class="formulario active" id="login">
+                <h2>Bienvenido de vuelta</h2>
+                <p>Ingresa tus credenciales para acceder a tu cuenta</p>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" placeholder="correo@gmail.com">
+
+                <label for="password">Contraseña</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Contraseña">
+                    <span class="toggle-password" data-target="password">👁️‍🗨️</span>
+                </div>
+
+                <button class="btn-login">Iniciar Sesión</button>
+
+                <a href="#" class="olvide">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <!-- Formulario de Registro -->
+            <div class="formulario" id="register">
+                <h2>Crear cuenta</h2>
+                <p>Únete a nuestra plataforma de salud inteligente</p>
+
+                <div class="grid-2">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido">
+                    </div>
+                </div>
+
+                <label for="email-reg">Correo electrónico</label>
+                <input type="email" id="email-reg" placeholder="correo@gmail.com">
+
+                <label for="password-reg">Contraseña</label>
+                <div class="password-container">
+                    <input type="password" id="password-reg" placeholder="Contraseña">
+                    <span class="toggle-password" data-target="password-reg">👁️‍🗨️</span>
+                </div>
+
+                <button class="btn-login">Crear Cuenta</button>
+            </div>
+        </div>
+
+        <div class="features">
+            <div>
+                <span>🛡️</span>
+                <p>Seguro y Privado</p>
+            </div>
+            <div>
+                <span>💚</span>
+                <p>IA Médica</p>
+            </div>
+            <div>
+                <span>👨‍⚕️</span>
+                <p>Profesionales</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript separado -->
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
